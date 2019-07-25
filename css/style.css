@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-*
-{
+*{
     outline: none !important;
 }
 body
@@ -22,7 +21,7 @@ p
     transition: 0.5s;
 }
 .navbar.scrolled{
-    background: transparent !important;
+    background: rgb(255, 255, 255,.7) !important;
     transition: 0.5s;
 }
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link{
@@ -55,7 +54,8 @@ p
     background-size: cover;
     margin-bottom: 0;
 }
-.banner::before
+.banner:before,
+.contact:before
 {
     content: '';
     position: absolute;
@@ -66,7 +66,8 @@ p
     background: linear-gradient(#fff,transparent);
     pointer-events: none;
 }
-.banner:after
+.banner:after,
+.contact:after
 {
     content: '';
     position: absolute;
@@ -85,6 +86,17 @@ p
 {
     height: 100%;
 }
+.btnD1{
+    background: #696666;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+    padding: 10px 30px;
+}
+.btnD1:hover{
+    background: #fff;
+    
+}
 .contentBox
 {
     position: relative;
@@ -100,4 +112,136 @@ p
     color: #1f1d1d;
     text-transform: uppercase;
     font-size: 5rem;
+}
+.contact
+{
+    position: relative;
+    padding: 100px 0;
+    background: url(../img/contato.jpg);
+    background-size: cover;
+    min-height: 100vh;
+}
+.contact form
+{
+    position: relative;
+    z-index: 1000;
+}
+.contact .form-control
+{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+    height: 50px;
+    border-radius: 0;
+    background: rgb(0, 0, 0,.4);
+    color: #fff;
+    font-size: 1.25rem;
+}
+.contact .form-control:focus,
+.contact .form-control:hover
+{
+    border: none;
+    border-bottom: 2px solid #DB9633;
+}
+.contact .textarea
+{
+    min-height: 100px;
+}
+.contact label
+{
+    color: #fff;
+    font-size: 1.25rem;
+}
+footer
+{
+    background: #000;
+    padding: 50px 0 0;
+}
+.sci
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sci li
+{
+    list-style: none;
+    margin: 0 20px;
+}
+.sci li a
+{
+    color: #777;
+    font-size: 2em;
+    transition: 0.5s;
+}
+.sci li a:hover
+{
+    color: #fff;
+}
+.cpryt
+{
+    margin-top: 20px;
+    text-align: center;
+    color: #777;
+}
+.cpryt a,
+.cpryt a:hover
+{
+    color: #fff;
+}
+
+@media(min-widht: 992px)
+{
+    .navbar-expand-lg .navbar-nav .nav-link 
+    {
+        padding-right: 1em;
+        padding-left: 1rem;
+    }
+}
+@media(max-widht: 992px)
+{
+    .nav-link .nav-toggler
+    {
+        background: #fff;
+        border-radius: 0;
+    }
+    .banner
+    {
+        min-height: 100vh;
+        padding: 100px 0;
+    }
+    .contentBox h1
+    {
+        font-size: 2rem;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link 
+    {
+        padding-right: 1em;
+        padding-left: 1rem;
+    }
+    .headerText h2{
+        font-size: 2rem;
+    }
+    .contact
+    {
+        padding: 20px 0;
+    }
+    .contact .form-control
+    {
+        height: 40px;
+        border: 1px solid #fff;
+    }
+    .sci
+    {
+        list-style: none;
+        margin: 0 10px;
+    }
+    .sci li a
+    {
+        color:#777;
+        font-size: 1.5rem;
+        transition: 0.5s;
+    }
 }
