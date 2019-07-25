@@ -88,15 +88,32 @@ p
 {
     height: 100%;
 }
-.btnD1{
+.btnD1
+{
     background: #696666;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+    margin: 10px 0;
+    padding: 10px 30px;
+}
+.btnD2
+{
+    background: #DB9633;
     color: #fff;
     border-radius: 30px;
     border: none;
     padding: 10px 30px;
 }
-.btnD1:hover{
+.btnD1:hover
+{
     background: #fff;
+    
+}
+.btnD2:hover
+{
+    background: #696666;
+    color: #fff;
     
 }
 .contentBox
@@ -114,10 +131,6 @@ p
     color: #1f1d1d;
     text-transform: uppercase;
     font-size: 5rem;
-}
-.empresaText
-{
-    font-size: 
 }
 .contact
 {
@@ -196,6 +209,23 @@ footer
 .cpryt a:hover
 {
     color: #fff;
+}
+
+.empresaText
+{
+    margin: 8rem 0;
+    font-size: 1.25rem;
+    align-items: center;
+    text-align: center;
+}
+.empresaText h1
+{
+    padding-bottom: 40px;
+}
+
+.empresaText p
+{
+    padding-bottom: 40px;
 }
 
 @media(min-widht: 992px)
