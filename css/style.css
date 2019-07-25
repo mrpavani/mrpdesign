@@ -17,10 +17,12 @@ p
     font-size: 1.15rem;
 }
 .navbar
-{   background: transparent !important;
+{   
+    background: transparent !important;
     transition: 0.5s;
 }
-.navbar.scrolled{
+.navbar.scrolled
+{
     background: rgb(255, 255, 255,.7) !important;
     transition: 0.5s;
 }
@@ -47,7 +49,7 @@ p
 .banner
 {
     position: relative;
-    top: 0;
+    top: -50;
     width: 100%;
     height: 100vh;
     background: url(../img/bg_top.png);
@@ -112,6 +114,10 @@ p
     color: #1f1d1d;
     text-transform: uppercase;
     font-size: 5rem;
+}
+.empresaText
+{
+    font-size: 
 }
 .contact
 {
