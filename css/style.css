@@ -135,7 +135,7 @@ p
 .contact
 {
     position: relative;
-    padding: 100px 0;
+    padding: 80px 0;
     background: url(../img/contato.jpg);
     background-size: cover;
     min-height: 100vh;
@@ -244,11 +244,11 @@ footer
 }
 .service-itens
 {
-    width: 100%;
-    height: 100hv;
+    width: 90%;
+    height: 300px;
     background: #E8EAEB;
     align-items: center;
-    padding: 30px 0;
+    padding: 10%;
 
 }
 .service-itens i{
@@ -258,6 +258,23 @@ footer
     background: #DB9633;
     font-size: 1.5em;
     color: #fff;
+}
+.service-itens h3
+{
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 30px 0 10px 0;
+    font-size: 1.3em;
+}
+.service-itens p
+{
+    font-weight: 500;
+    font-size: .8em;
+}
+.service-itens i.icon-mobile
+{
+    font-size: 2em;
+    padding: 15px 25px !important;
 }
 
 @media(min-widht: 992px)
@@ -311,5 +328,21 @@ footer
         color:#777;
         font-size: 1.5rem;
         transition: 0.5s;
+    }
+    .service{
+        display: flex;
+        justify-items: center;
+        text-align: center;
+        
+    }
+    .service-top
+    {
+        position: relative;
+        width: 100%;
+        padding:30px;
+    }
+
+    .service-itens{
+        margin: 10px 0;
     }
 }
