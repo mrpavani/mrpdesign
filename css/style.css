@@ -240,7 +240,7 @@ footer
 }
 .service_icons
 {   
-    margin: 10px 0;
+    margin: 7px 0;
 }
 .service-itens
 {
@@ -249,6 +249,7 @@ footer
     background: #E8EAEB;
     align-items: center;
     padding: 10%;
+    margin: 10px 0;
 
 }
 .service-itens i{
@@ -275,6 +276,12 @@ footer
 {
     font-size: 2em;
     padding: 15px 25px !important;
+}
+
+.imgPortfolio
+{
+    width: 100%;
+    height: 90vh;
 }
 
 @media(min-widht: 992px)
